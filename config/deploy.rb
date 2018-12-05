@@ -79,7 +79,6 @@ before :starting,  :check_revision
 after  :finishing, :compile_assets
 after  :finishing, :cleanup
 after  :finishing, :restart
-end
 
 desc "Run rake db:seed on a remote server."
 task :seed do
