@@ -53,7 +53,7 @@ group :development do
   gem 'capistrano'
   gem 'capistrano-bundler'
   gem 'capistrano-rvm'
-  gem 'capistrano3-unicorn', require: false
+  gem 'capistrano3-puma', require: false
   gem 'capistrano-rake', require: false
 
 end
