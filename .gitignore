@@ -26,5 +26,3 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 HELPYOU.md
-/config/database.yml
-/config/secrets.yml

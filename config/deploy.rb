@@ -65,13 +65,6 @@ desc 'Restart application'
   end
 end
 
-desc 'Upload to shared/config'
-  task :upload do
-  on roles (:app) do
-    upload! "config/database.yml", "#{shared_path}/config/database.yml"
-    upload! "config/secrets.yml",  "#{shared_path}/config/secrets.yml"
-  end
-end
 
 desc "Run rake db:seed on a remote server."
 task :seed do
