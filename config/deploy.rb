@@ -73,11 +73,6 @@ desc 'Upload to shared/config'
   end
 end
 
-before :starting,  :check_revision
-after  :finishing, :compile_assets
-after  :finishing, :cleanup
-after  :finishing, :restart
-
 desc "Run rake db:seed on a remote server."
 task :seed do
   on roles (:app) do
