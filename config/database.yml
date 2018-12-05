@@ -51,4 +51,4 @@ production:
   <<: *default
   database: sample_app_deploy_production
   username: sample_app_deploy
-  password: <%= ENV['SAMPLE_APP_DEPLOY_DATABASE_PASSWORD'] %>
+  password: password
