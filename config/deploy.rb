@@ -3,7 +3,7 @@ server "45.118.134.212", user: "root", roles: %w{web, app, db}, primary: true
 
 set :repo_url,        'git@github.com:sondazinza/sample_app_deploy.git'
 set :application,     'sample_app_deploy'
-set :user,            'root'
+set :user,            'sonda'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
 
@@ -12,7 +12,7 @@ set :pty,             true
 set :use_sudo,        false
 set :stage,           :production
 set :deploy_via,      :remote_cache
-set :deploy_to,       "/home/#{fetch(:user)}/apps/#{fetch(:application)}"
+set :deploy_to,       "/home/sonda/#{fetch(:application)}"
 set :puma_bind,       "unix://#{shared_path}/tmp/sockets/#{fetch(:application)}-puma.sock"
 set :puma_state,      "#{shared_path}/tmp/pids/puma.state"
 set :puma_pid,        "#{shared_path}/tmp/pids/puma.pid"
