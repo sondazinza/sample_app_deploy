@@ -27,3 +27,5 @@
 /config/master.key
 HELPYOU.md
 config/deploy.rb.bk
+config/puma.rb.bk
+
