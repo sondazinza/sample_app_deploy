@@ -76,7 +76,10 @@ namespace :deploy do
   before :starting,     :check_revision
   after  :finishing,    :compile_assets
   after  :finishing,    :cleanup
+  after :finishing, :restart
 end
+
+after 'deploy:publishing', 'deploy:initial'
 
 # ps aux | grep puma    # Get puma pid
 # kill -s SIGUSR2 pid   # Restart puma
