@@ -28,4 +28,7 @@
 HELPYOU.md
 config/deploy.rb.bk
 config/puma.rb.bk
-
+Capfile.bk
+config/nginx.conf.bk
+config_run_puma_on_server
+.env

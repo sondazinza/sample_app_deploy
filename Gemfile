@@ -33,6 +33,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 
 # Reduces boot times through caching; required in config/boot.rb
+
 gem 'listen', '>= 3.0.5', '< 3.2'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'dotenv-rails'
@@ -55,7 +56,7 @@ group :development do
   gem 'capistrano-rvm'
   gem 'capistrano3-puma', require: false
   gem 'capistrano-rake', require: false
-
+  gem 'capistrano3-nginx', '~> 2.0'
 end
 
 group :test do
