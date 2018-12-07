@@ -57,6 +57,7 @@ group :development do
   gem 'capistrano3-puma', require: false
   gem 'capistrano-rake', require: false
   gem 'capistrano3-nginx', '~> 2.0'
+  gem 'capistrano-linked-files'
 end
 
 group :test do
